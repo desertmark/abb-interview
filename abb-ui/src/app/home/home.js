@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Feature, Text } from '../../components/';
+import { Grid, Feature } from '../../components/';
 import HomeProvider, { useHomeState } from './home.context';
 
 function Home() {
@@ -16,4 +16,5 @@ function Home() {
     );
 }
 
-export default () => <HomeProvider><Home></Home></HomeProvider>;
+const HomeExport = () => <HomeProvider><Home></Home></HomeProvider>;
+export default HomeExport;

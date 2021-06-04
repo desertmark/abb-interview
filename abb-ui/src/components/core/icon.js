@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import { ExclamationCircle } from '@styled-icons/heroicons-outline/ExclamationCircle';
 import { CloseCircle } from '@styled-icons/ionicons-outline/CloseCircle';
 import { CheckCircle } from '@styled-icons/boxicons-regular/CheckCircle';
@@ -12,12 +11,9 @@ const icons = {
 }
 
 
-function Icon({ name, color, w }) {
-    const StyledIcon = styled(icons[name])`
-        color: ${props => props.color || 'white'};
-        width: ${props => props.w || '1rem'};
-    `;
-    return <StyledIcon w={w} color={color}></StyledIcon>
+function Icon({ name, ...props }) {
+    const Icon = icons[name];
+    return <Icon {...props}></Icon>
 }
 
 export default Icon;

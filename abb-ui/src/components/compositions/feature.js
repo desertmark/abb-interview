@@ -39,7 +39,7 @@ function Feature({ feature }) {
                     </Flex>
                     <Text secondary upper bold>{feature.name}</Text>
                 </Flex>
-                <Icon name={STATUS_ICON[feature.statusCode]} w="1.5rem"></Icon>
+                <Icon name={STATUS_ICON[feature.statusCode]} color="white" size="1.5rem"></Icon>
             </Flex>
             <Grid cols={4} className="feature__body">
                 <Text bold>Control</Text>
@@ -54,7 +54,7 @@ function Feature({ feature }) {
                             <Text align="center">{control.dev.toFixed(2)}</Text>
                             <Text align="center">{control.devOutTotal.toFixed(2)}</Text>
                             <Flex align="center">
-                                <Icon w="1.5rem" name={STATUS_ICON[control.statusCode]} color={STATUS_COLOR[control.statusCode]}></Icon>    
+                                <Icon size="1.5rem" name={STATUS_ICON[control.statusCode]} color={STATUS_COLOR[control.statusCode]}></Icon>    
                             </Flex>
                         </React.Fragment>
                     );
