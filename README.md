@@ -2,7 +2,7 @@
 
 ## Introductions
 
-This assignment is consists of both back-end and front-end implementations. 
+This assignment consists of both back-end and front-end implementations. 
 
 The Back-end is little socket.io server that will stream the parts measurments on client's connections. Data is mocked by using random numbers provided by a mock data layer.
 
